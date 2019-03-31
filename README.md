@@ -21,7 +21,12 @@ A project created in React/Redux that displays the characters of star wars using
 - Error handling if API call failed
 - Merge existing TableView component
 - Add additional test scripts
-- Browser compatibility testing (Only done basic tests in latest versions of Chrome, FF, Safari)
+- Browser compatibility testing
+
+### Environment Tested
+- npm version: 5.6.0
+- operating system: mac, windows
+- browsers: Chrome, Firefox, Safari
 
 ### IMPORTANT
 
