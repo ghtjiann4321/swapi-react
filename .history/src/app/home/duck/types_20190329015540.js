@@ -1,0 +1,9 @@
+export const LOAD_DATA = '[PEOPLE] LOAD DATA ';
+export const LOAD_DATA_SUCCESS = '[PEOPLE] LOAD DATA SUCCESS';
+export const LOAD_DATA_FAILED = '[PEOPLE] LOAD DATA FAILED';
+
+export default {
+  LOAD_DATA,
+  LOAD_DATA_SUCCESS,
+  LOAD_DATA_FAILED
+}
