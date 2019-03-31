@@ -4,7 +4,7 @@ A project created in React/Redux that displays the characters of star wars using
 
 #### Backlog
 
-- Incomplete unit test files
+- ~~Incomplete unit test files~~
 - ~~Fade animation on spinner component not working~~
 
 ### Screenshots
