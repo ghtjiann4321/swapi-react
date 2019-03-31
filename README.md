@@ -5,15 +5,19 @@ A project created in React/Redux that displays the characters of star wars using
 #### Backlog
 
 - Incomplete unit test files
-- Vehicle dialog list not showing vehicles in parallel
 - ~~Fade animation on spinner component not working~~
-- Error handling on api fetch
 
 ### Screenshots
 
 <img src="/screenshots/home.png" width="50%" />
 <img src="/screenshots/search.png" width="50%" />
 <img src="/screenshots/vehicle-list.png" width="50%" />
+
+### Future Improvements
+
+- React Virtualized for list display
+- Only display vehicle table if all api call to is completed
+- Error handling if API call failed
 
 ### IMPORTANT
 

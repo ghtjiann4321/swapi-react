@@ -13,6 +13,11 @@ export default class TableView extends Component {
     data: PropTypes.array,
     isLoading: PropTypes.bool
   }
+
+  static defaultProps = {
+    data: []
+  }
+
   render() {
     const { data, isLoading } = this.props
 

@@ -21,6 +21,10 @@ export default class TableView extends Component {
     isLoading: PropTypes.bool
   }
 
+  static defaultProps = {
+    data: []
+  }
+
   handleChangePage = (event, page) => {
     this.props.onChangePage(page)
   }
