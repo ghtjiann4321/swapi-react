@@ -13,7 +13,7 @@ const loadDataSuccess = (data, page) => ({
 })
 
 const loadDataFailed = error => ({
-  type: types.LOAD_PEOPLE_FAILED,
+  type: types.LOAD_DATA_FAILED,
   isLoading: false,
   error
 })

@@ -1,5 +1,5 @@
 import React from 'react'
-import Enzyme, { shallow, mount } from 'enzyme'
+import Enzyme, { shallow } from 'enzyme'
 import Search from './Search'
 import Adapter from 'enzyme-adapter-react-16'
 
@@ -10,14 +10,5 @@ describe('Search component', () => {
     const wrapper = shallow(<Search />)
 
     expect(wrapper.exists()).toBe(true)
-  })
-
-  test('user text is echoed', () => {
-    const wrapper = shallow(<Search />)
-
-    wrapper.find('SearchInput').simulate('change', {
-      target: { value: 'Ana' }
-    })
-    expect(wrapper.find('input').props().value).toEqual('hello')
   })
 })
