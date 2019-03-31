@@ -5,6 +5,7 @@ import Dialog from '@material-ui/core/Dialog'
 import { DialogContent, Icon, Fab } from '@material-ui/core'
 import TableViewVehicle from '../table-view/TableViewVehicle'
 import styled from 'styled-components'
+import PerfectScrollbar from 'react-perfect-scrollbar'
 
 export default class DialogView extends Component {
   static propTypes = {
@@ -45,7 +46,9 @@ export default class DialogView extends Component {
             </Fab>
           </CloseBtn>
           <DialogContent>
-            <TableViewVehicle data={personVehicles} isLoading={isLoading} />
+            <PerfectScrollbar>
+              <TableViewVehicle data={personVehicles} isLoading={isLoading} />
+            </PerfectScrollbar>
           </DialogContent>
         </Dialog>
       </div>
