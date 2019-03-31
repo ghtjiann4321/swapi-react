@@ -19,6 +19,7 @@ A project created in React/Redux that displays the characters of star wars using
 - React Virtualized for list display
 - Only display vehicle table if all api call to is completed
 - Error handling if API call failed
+- Merge existing TableView component
 
 ### IMPORTANT
 
