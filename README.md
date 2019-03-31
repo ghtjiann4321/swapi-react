@@ -6,7 +6,7 @@ A project created in React/Redux that displays the characters of star wars using
 
 - Incomplete unit test files
 - Vehicle dialog list not showing vehicles in parallel
-- Fade animation on spinner component not working
+- ~~Fade animation on spinner component not working~~
 - Error handling on api fetch
 
 ### Screenshots
