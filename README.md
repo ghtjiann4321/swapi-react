@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## SWAPI - React
 
 A project created in React/Redux that displays the characters of star wars using the SWAPI endpoint.
@@ -19,6 +17,6 @@ A project created in React/Redux that displays the characters of star wars using
 
 ### IMPORTANT
 
-<span style="color:red">I encounterd a CORS related issue using the SWAPI endpoint. If the SWAPI endpoint is encountering any CORS issue, try installing the Chrome extension called "Allow-Control-Allow-Origin: \*". I am not really sure since today, I tried turning the extension off and it calls the api successfully.</span>
+<span style="color:red">I encounterd a CORS related issue using the SWAPI endpoint. If the SWAPI endpoint is encountering any CORS issue, try installing the Chrome extension called "Allow-Control-Allow-Origin: \*". I am not really sure but recently, I tried turning the extension off and it calls the api successfully.</span>
 
 [Click here to download the extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
