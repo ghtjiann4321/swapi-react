@@ -13,9 +13,9 @@ A project created in React/Redux that displays the characters of star wars using
 
 ### Screenshots
 
-<img src="/screenshots/home.png" width="33.33%" />
-<img src="/screenshots/search.png" width="33.33%" />
-<img src="/screenshots/vehicle.png" width="33.33%" />
+<a href="/screenshots/home.png" target="_blank"><img src="/screenshots/home.png" width="33.33%" /></a>
+<a href="/screenshots/home.png" target="_blank"><img src="/screenshots/search.png" width="33.33%" /></a>
+<a href="/screenshots/home.png" target="_blank"><img src="/screenshots/vehicle-list.png" width="33.33%" /></a>
 
 ### IMPORTANT
 
