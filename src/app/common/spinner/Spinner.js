@@ -18,9 +18,9 @@ const SpinnerOverlay = styled.div`
   justify-content: center;
   align-items: center;
   z-index: 99;
-  transition: all .3s;
-  -moz-transition: all .3s;
-  -webkit-transition: all .3s;
+  transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
 `
 
 export default class Spinner extends PureComponent {

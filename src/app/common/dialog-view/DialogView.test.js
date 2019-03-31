@@ -7,7 +7,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe('DialogView component', () => {
   test('renders', () => {
-    const wrapper = shallow(<DialogView maxWidth={'lg'}/>)
+    const wrapper = shallow(<DialogView maxWidth={'lg'} />)
 
     expect(wrapper.exists()).toBe(true)
   })

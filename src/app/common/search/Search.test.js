@@ -18,6 +18,6 @@ describe('Search component', () => {
     wrapper.find('SearchInput').simulate('change', {
       target: { value: 'Ana' }
     })
-    expect(wrapper.find("input").props().value).toEqual("hello");
+    expect(wrapper.find('input').props().value).toEqual('hello')
   })
 })
