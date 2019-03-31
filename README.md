@@ -19,6 +19,6 @@ A project created in React/Redux that displays the characters of star wars using
 
 ### IMPORTANT
 
-<span style="color:red">I encounterd a CORS related issue using the SWAPI endpoint If the SWAPI endpoint is encountering any CORS issue. I tried installing a Chrome extension called "Allow-Control-Allow-Origin: \*" and got it working.</span>
+<span style="color:red">I encounterd a CORS related issue using the SWAPI endpoint. If the SWAPI endpoint is encountering any CORS issue, try installing the Chrome extension called "Allow-Control-Allow-Origin: \*". I am not really sure since today, I tried turning the extension off and it calls the api successfully.</span>
 
 [Click here to download the extension](https://chrome.google.com/webstore/detail/allow-control-allow-origi/nlfbmbojpeacfghkpbjhddihlkkiljbi?hl=en)
