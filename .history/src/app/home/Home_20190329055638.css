@@ -1,7 +1,0 @@
-.logo-wrapper-xs, .logo-wrapper-sm {
-  flex-direction: column;
-}
-
-.logo-wrapper-xs input, .logo-wrapper-sm input {
-  margin-top: 20px;
-}
