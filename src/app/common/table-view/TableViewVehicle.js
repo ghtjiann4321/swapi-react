@@ -6,7 +6,7 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import Spinner from '../spinner/Spinner'
 
-import { TableWrapper, TableContent } from './styles'
+import { TableWrapper, TableContent, TableCellBold } from './styles'
 
 export default class TableView extends Component {
   static propTypes = {
@@ -32,7 +32,7 @@ export default class TableView extends Component {
             <TableBody>
               {data.map(row => (
                 <TableRow key={row.name}>
-                  <TableCell>{row.name}</TableCell>
+                  <TableCellBold>{row.name}</TableCellBold>
                   <TableCell>{row.model}</TableCell>
                   <TableCell>{row.manufacturer}</TableCell>
                   <TableCell>{row.vehicle_class}</TableCell>

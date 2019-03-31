@@ -9,7 +9,7 @@ import TablePagination from '@material-ui/core/TablePagination'
 import Moment from 'react-moment'
 import Spinner from '../spinner/Spinner'
 
-import { StyledButton, BtnIcon, TableWrapper } from './styles'
+import { StyledButton, BtnIcon, TableWrapper, TableCellBold } from './styles'
 
 export default class TableView extends Component {
   static propTypes = {
@@ -49,7 +49,7 @@ export default class TableView extends Component {
           <TableBody>
             {data.map(row => (
               <TableRow key={row.name}>
-                <TableCell>{row.name}</TableCell>
+                <TableCellBold>{row.name}</TableCellBold>
                 <TableCell>{row.height}</TableCell>
                 <TableCell>{row.mass}</TableCell>
                 <TableCell>{row.gender}</TableCell>

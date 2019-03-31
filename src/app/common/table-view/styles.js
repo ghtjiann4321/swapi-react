@@ -1,10 +1,14 @@
-import { Button, Table, Icon } from '@material-ui/core'
+import { Button, Table, Icon, TableCell } from '@material-ui/core'
 import styled from 'styled-components'
 
 export const TableContent = styled.div`
   border: 1px solid #efefef;
   border-radius: 6px;
   overflow: auto;
+`
+
+export const TableCellBold = styled(TableCell)`
+  font-weight: bold !important;
 `
 
 export const StyledButton = styled(Button)`

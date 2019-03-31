@@ -15,10 +15,9 @@ describe('Search component', () => {
   test('user text is echoed', () => {
     const wrapper = shallow(<Search />)
 
-    console.log(wrapper.find('SearchInput'))
-
     wrapper.find('SearchInput').simulate('change', {
-      target: { value: 'hello' }
+      target: { value: 'Ana' }
     })
+    expect(wrapper.find("input").props().value).toEqual("hello");
   })
 })
