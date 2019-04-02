@@ -62,5 +62,6 @@ export const TableWrapper = styled(Table)`
   th,
   td {
     bordercolor: '#efefef !important';
+    padding: 4px 24px;
   }
 `
