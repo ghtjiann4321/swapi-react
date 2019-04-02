@@ -42,5 +42,4 @@ export const Logo = styled.svg`
 
 export const WrapperPos = styled.div`
   position: relative;
-  overflow-y: auto;
 `

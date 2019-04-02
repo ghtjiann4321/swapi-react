@@ -24,6 +24,10 @@ export const StyledButton = styled(Button)`
   }
 `
 
+export const WrapperOverflow = styled.div`
+  overflow: auto;
+`
+
 export const BtnIcon = styled(Icon)`
   margin-left: 4px;
   font-size: 16px !important;

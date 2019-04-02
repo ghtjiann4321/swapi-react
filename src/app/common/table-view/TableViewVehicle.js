@@ -6,7 +6,7 @@ import TableHead from '@material-ui/core/TableHead'
 import TableRow from '@material-ui/core/TableRow'
 import Spinner from '../spinner/Spinner'
 
-import { TableWrapper, TableContent, TableCellBold } from './styles'
+import { TableWrapper, TableContent, TableCellBold, WrapperOverflow } from './styles'
 
 export default class TableView extends Component {
   static propTypes = {
@@ -22,7 +22,7 @@ export default class TableView extends Component {
     const { data, isLoading } = this.props
 
     return (
-      <div>
+      <WrapperOverflow>
         <Spinner isLoading={isLoading} />
         <TableContent>
           <TableWrapper>
@@ -51,7 +51,7 @@ export default class TableView extends Component {
             </TableBody>
           </TableWrapper>
         </TableContent>
-      </div>
+      </WrapperOverflow>
     )
   }
 }

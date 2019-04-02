@@ -9,7 +9,7 @@ import TablePagination from '@material-ui/core/TablePagination'
 import Moment from 'react-moment'
 import Spinner from '../spinner/Spinner'
 
-import { StyledButton, BtnIcon, TableWrapper, TableCellBold } from './styles'
+import { StyledButton, BtnIcon, TableWrapper, TableCellBold, WrapperOverflow } from './styles'
 
 export default class TableView extends Component {
   static propTypes = {
@@ -37,7 +37,7 @@ export default class TableView extends Component {
     const { data, dataCount, page, isLoading } = this.props
 
     return (
-      <div>
+      <WrapperOverflow>
         <Spinner isLoading={isLoading} />
         <TableWrapper>
           <TableHead>
@@ -91,7 +91,7 @@ export default class TableView extends Component {
             </TableRow>
           </TableFooter>
         </TableWrapper>
-      </div>
+      </WrapperOverflow>
     )
   }
 }
