@@ -2,6 +2,9 @@
 
 A project created in React/Redux that displays the characters of star wars using the SWAPI endpoint.
 
+### NEW GITHUB DEMO PAGE
+[Click to see live demo](https://ghtjiann4321.github.io/)
+
 #### Backlog
 
 - ~~Incomplete unit test files~~
