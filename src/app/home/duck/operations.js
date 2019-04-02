@@ -3,11 +3,10 @@ import Actions from './actions'
 const loadData = Actions.loadData
 const loadDataSuccess = Actions.loadDataSuccess
 const loadDataFailed = Actions.loadDataFailed
-const loadDataVehicle = Actions.loadDataVehicle
-const loadDataVehicleSuccess = Actions.loadDataVehicleSuccess
-const loadDataVehicleFailed = Actions.loadDataVehicleFailed
+const loadDataVehicles = Actions.loadDataVehicles
+const loadDataVehiclesSuccess = Actions.loadDataVehiclesSuccess
+const loadDataVehiclesFailed = Actions.loadDataVehiclesFailed
 const removeData = Actions.removeData
-const setLoading = Actions.setLoading
 const setSearch = Actions.setSearch
 const setSelectedPerson = Actions.setSelectedPerson
 
@@ -15,13 +14,12 @@ export default {
   loadData,
   loadDataSuccess,
   loadDataFailed,
-  loadDataVehicle,
-  loadDataVehicleSuccess,
-  loadDataVehicleFailed,
+  loadDataVehicles,
+  loadDataVehiclesSuccess,
+  loadDataVehiclesFailed,
   removeData,
-  setLoading,
   fetchData,
-  fetchDataVehicle,
+  fetchDataVehicles,
   setSearch,
   setSelectedPerson
 }
@@ -35,11 +33,18 @@ export function fetchData(url, page) {
   }
 }
 
-export function fetchDataVehicle(url) {
+export function fetchDataVehicles(urls) {
   return dispatch => {
-    dispatch(loadDataVehicle())
-    return fetch(url)
-      .then(response => response.json(), error => dispatch(loadDataVehicleFailed(error)))
-      .then(response => dispatch(loadDataVehicleSuccess(response)))
+    dispatch(loadDataVehicles())
+
+    try {
+      const data = Promise.all(urls.map(url => fetch(url).then(response => response.json())))
+
+      data.then(vehicles => {
+        dispatch(loadDataVehiclesSuccess(vehicles))
+      })
+    } catch (error) {
+      dispatch(loadDataVehiclesFailed(error))
+    }
   }
 }

@@ -68,24 +68,14 @@ class Home extends Component {
   loadVehicles = person => {
     if (person.vehicles.length > 0) {
       let requestArr = []
-      this.props.setLoading(true)
 
       // Loop thru all person's vehicle and push to array
       for (let i = 0; i < person.vehicles.length; i++) {
         const url = person.vehicles[i]
-        requestArr.push(this.props.fetchDataVehicle(url))
+        requestArr.push(url)
       }
 
-      // Wait for all promise to complete
-      Promise.all(requestArr)
-        .then(() => {
-          setTimeout(() => {
-            this.props.setLoading(false)
-          }, 1000)
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      this.props.fetchDataVehicles(requestArr)
     }
   }
 

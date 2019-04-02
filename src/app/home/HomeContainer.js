@@ -24,12 +24,14 @@ const mapDispatchToProps = dispatch => {
   const fetchDataVehicle = url => {
     dispatch(homeOperations.fetchDataVehicle(url))
   }
+  const fetchDataVehicles = urls => {
+    dispatch(homeOperations.fetchDataVehicles(urls))
+  }
   const removeData = entity => dispatch(homeOperations.removeData(entity))
-  const setLoading = toggle => dispatch(homeOperations.setLoading(toggle))
   const setSearch = searchString => dispatch(homeOperations.setSearch(searchString))
   const setSelectedPerson = person => dispatch(homeOperations.setSelectedPerson(person))
 
-  return { removeData, setLoading, fetchData, setSearch, setSelectedPerson, fetchDataVehicle }
+  return { removeData, fetchData, setSearch, setSelectedPerson, fetchDataVehicle, fetchDataVehicles }
 }
 
 const HomeContainer = connect(

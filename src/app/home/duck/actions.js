@@ -18,18 +18,18 @@ const loadDataFailed = error => ({
   error
 })
 
-const loadDataVehicle = () => ({
-  type: types.LOAD_DATA_VEHICLE
+const loadDataVehicles = () => ({
+  type: types.LOAD_DATA_VEHICLES
 })
 
-const loadDataVehicleSuccess = data => ({
-  type: types.LOAD_DATA_VEHICLE_SUCCESS,
+const loadDataVehiclesSuccess = data => ({
+  type: types.LOAD_DATA_VEHICLES_SUCCESS,
   isLoading: false,
   data
 })
 
-const loadDataVehicleFailed = error => ({
-  type: types.LOAD_DATA_VEHICLE_FAILED,
+const loadDataVehiclesFailed = error => ({
+  type: types.LOAD_DATA_VEHICLES_FAILED,
   isLoading: false,
   error
 })
@@ -37,11 +37,6 @@ const loadDataVehicleFailed = error => ({
 const removeData = entity => ({
   type: types.REMOVE_DATA,
   entity
-})
-
-const setLoading = toggle => ({
-  type: types.SET_LOADING,
-  isLoadingDialog: toggle
 })
 
 const setSearch = searchString => ({
@@ -58,11 +53,10 @@ export default {
   loadData,
   loadDataSuccess,
   loadDataFailed,
-  loadDataVehicle,
-  loadDataVehicleSuccess,
-  loadDataVehicleFailed,
+  loadDataVehicles,
+  loadDataVehiclesSuccess,
+  loadDataVehiclesFailed,
   removeData,
-  setLoading,
   setSearch,
   setSelectedPerson
 }

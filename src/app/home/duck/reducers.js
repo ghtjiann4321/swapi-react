@@ -19,18 +19,18 @@ const homeReducer = (state = INITIAL_STATE, action) => {
     case types.LOAD_DATA_SUCCESS:
       return { ...state, people: action.data.results, totalPeopleCount: action.data.count, page: action.page, isLoading: false }
 
-    case types.LOAD_DATA_VEHICLE_SUCCESS:
-      return { ...state, personVehicles: [...state.personVehicles, action.data] }
+    case types.LOAD_DATA_VEHICLES:
+      return { ...state, isLoadingDialog: true }
 
-    case types.LOAD_DATA_VEHICLE_FAILED:
+    case types.LOAD_DATA_VEHICLES_SUCCESS:
+      return { ...state, personVehicles: action.data, isLoadingDialog: false }
+
+    case types.LOAD_DATA_VEHICLES_FAILED:
     case types.LOAD_DATA_FAILED:
       return { ...state, isLoading: false }
 
     case types.REMOVE_DATA:
       return { ...state, [action.entity]: [] }
-
-    case types.SET_LOADING:
-      return { ...state, isLoadingDialog: action.isLoadingDialog }
 
     case types.SET_SEARCH:
       return { ...state, searchString: action.searchString }
